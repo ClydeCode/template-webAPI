@@ -1,10 +1,10 @@
-﻿using ecommerce_webApi.Data;
-using ecommerce_webApi.Models;
-using ecommerce_webApi.Services;
+﻿using template_webApi.Data;
+using template_webApi.Models;
+using template_webApi.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ecommerce_webApi.Controllers
+namespace template_webApi.Controllers
 {
     [ApiController]
     [Route("api/authentication")]

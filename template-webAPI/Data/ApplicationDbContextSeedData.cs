@@ -1,7 +1,7 @@
-﻿using ecommerce_webApi.Models;
+﻿using template_webApi.Models;
 using Microsoft.AspNetCore.Identity;
 
-namespace ecommerce_webApi.Data
+namespace template_webApi.Data
 {
     public class ApplicationDbContextSeedData
     {

@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using ecommerce_webApi.Data;
+using template_webApi.Data;
 
 #nullable disable
 
-namespace ecommerce_webApi.Migrations
+namespace template_webApi.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20230830145711_init")]

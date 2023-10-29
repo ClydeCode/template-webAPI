@@ -1,4 +1,4 @@
-﻿namespace ecommerce_webApi.Models
+﻿namespace template_webApi.Models
 {
     public class RegisterUserModel
     {

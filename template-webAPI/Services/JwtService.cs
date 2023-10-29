@@ -1,12 +1,12 @@
-﻿using ecommerce_webApi.Data;
-using ecommerce_webApi.Models;
+﻿using template_webApi.Data;
+using template_webApi.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace ecommerce_webApi.Services
+namespace template_webApi.Services
 {
     public class JwtService
     {
