@@ -1,10 +1,10 @@
-﻿using template_webApi.Data;
-using template_webApi.Models;
-using template_webApi.Services;
+﻿using ART_AI_API.Data;
+using ART_AI_API.Models;
+using ART_AI_API.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
-namespace template_webApi.Controllers
+namespace ART_AI_API.Controllers
 {
     [ApiController]
     [Route("api/authentication")]
@@ -21,7 +21,7 @@ namespace template_webApi.Controllers
         }
 
         [HttpPost]
-        [Route("Login")]
+        [Route("login")]
         public async Task<ActionResult<AuthenticationResponseModel>> Login(AuthenticationRequestModel model)
         {
             if (!ModelState.IsValid)
@@ -49,7 +49,7 @@ namespace template_webApi.Controllers
         }
 
         [HttpPost]
-        [Route("Register")]
+        [Route("register")]
         public async Task<ActionResult<AuthenticationResponseModel>> Register(RegisterUserModel model)
         {
             if (!ModelState.IsValid)
@@ -74,9 +74,7 @@ namespace template_webApi.Controllers
                 user = new ApplicationUser
                 {
                     UserName = model.UserName,
-                    Email = model.UserName,
-                    FirstName = model.FirstName,
-                    LastName = model.LastName
+                    Email = model.Email
                 };
 
                 var hasher = new PasswordHasher<ApplicationUser>();

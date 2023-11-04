@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace template_webApi.Data
+namespace ART_AI_API.Data
 {
     public class ApplicationRole : IdentityRole<Guid>
     {
