@@ -69,6 +69,13 @@ namespace ART_AI_API.Controllers
                 return BadRequest("Account with this username already exists");
             }
 
+            user = await _userManager.FindByEmailAsync(model.Email);
+
+            if (user != null)
+            {
+                return BadRequest("Account with this email already exists");
+            }
+
             try
             {
                 user = new ApplicationUser
@@ -84,7 +91,7 @@ namespace ART_AI_API.Controllers
 
                 var result = await _userManager.CreateAsync(user);
 
-                result = await _userManager.AddToRoleAsync(user, "Customer");
+                result = await _userManager.AddToRoleAsync(user, "User");
 
                 return _jwtService.CreateToken(user);
             }
