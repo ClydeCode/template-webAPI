@@ -1,12 +1,12 @@
-﻿using ART_AI_API.Data;
-using ART_AI_API.Models;
+﻿using template_webApi.Data;
+using template_webApi.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace ART_AI_API.Services
+namespace template_webApi.Services
 {
     public class JwtService
     {
@@ -33,8 +33,6 @@ namespace ART_AI_API.Services
 
             return new AuthenticationResponseModel
             {
-                UserName = user.UserName,
-                Email = user.Email,
                 Token = tokenHandler.WriteToken(token),
                 Expiration = expiration
             };

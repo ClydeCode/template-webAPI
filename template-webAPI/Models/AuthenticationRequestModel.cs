@@ -1,6 +1,6 @@
 ﻿using Microsoft.Build.Framework;
 
-namespace ART_AI_API.Models
+namespace template_webApi.Models
 {
     public class AuthenticationRequestModel
     {

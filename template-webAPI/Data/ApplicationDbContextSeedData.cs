@@ -1,7 +1,7 @@
-﻿using ART_AI_API.Models;
+﻿using template_webApi.Models;
 using Microsoft.AspNetCore.Identity;
 
-namespace ART_AI_API.Data
+namespace template_webApi.Data
 {
     public class ApplicationDbContextSeedData
     {
@@ -57,7 +57,9 @@ namespace ART_AI_API.Data
                     user = new ApplicationUser
                     {
                         UserName = userModel.UserName,
-                        Email = userModel.Email,
+                        Email = userModel.UserName,
+                        FirstName = userModel.FirstName,
+                        LastName = userModel.LastName,
                         EmailConfirmed = true
                     };
 

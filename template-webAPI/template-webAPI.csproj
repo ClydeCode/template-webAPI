@@ -5,7 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>1a9fd2cb-c05b-4b05-9d06-cf5f5e782110</UserSecretsId>
-    <RootNamespace>ART-AI-API</RootNamespace>
+    <RootNamespace>template-webAPI</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
